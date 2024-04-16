@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <style>
+        body {
+            background-image: linear-gradient(45deg, #F58A07, #F58A07, #fcad4c);
+            background-attachment: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 15px;
+            max-width: 85%;
+            margin: auto;
+            
+        }
+            div {
+                background-color: #d1e8fc;            
+                
+                border-radius: 3px;               
+            }
+
+            .inicio{
+                margin-top: 3px;              
+                
+            }
+            #topo {
+                background-color: black;
+                padding: 5px;                
+                text-align: center;
+                color: white;
+                border-top-left-radius: 3px;
+                border-top-right-radius: 3px;              
+                             
+                
+            }
+            .menu {
+                background-color: #4ECDC4;                
+                width: 100% ;                               
+                text-align: center;
+                height: 20px;
+
+            }            
+            .menu >  a {
+                color: black;
+                margin: 30px 15px;
+                padding: 10px;
+                width: auto;
+                text-decoration: none;
+                height: auto;               
+            }
+            .menu > a:hover {
+                color: #ed673b;
+            }
+            .menu, a:hover:active {
+                color: blueviolet;
+            }
+
+            .imagem > img {
+                border: 5px solid darkgoldenrod;
+                
+            }
+            .imgintro{
+                display: flex;
+            }
+            .imagem {                
+                float: left;
+                margin-top: 25px;
+                margin-left: 1%;
+            }
+
+            .tutorial {
+               width: 90%;
+               margin-bottom: 5px;
+               margin-left: 5px;
+               margin-top: -7px;
+               margin-right: 1%;
+            }
+            .tutorial > h1 {
+                background-color: #4ECDC4;
+                padding: 3px;
+                color: black;
+                font-size: 30px;
+                width: 350px;
+                box-shadow: 3px 3px 0px 0px #0000007f;
+            }
+            .tutorial > p {
+                background-color: #fef37e;
+                padding: 5px;                
+                text-indent: 10px;
+                border-radius: 3px;
+            }
+
+            p > mark {
+                background-color: #02f5e4;
+            }
+            .funcao {
+                margin-bottom: 18px;
+                padding: 5px;
+                text-indent: 10px;
+                margin
+            }
+            .funcao > h2{
+                text-align: left;
+                background-color: #4ECDC4;
+                padding: 3px;
+                color: black;
+                width: 300px;
+                box-shadow: 3px 3px 0px 0px #0000007f;
+            }
+            .funcao > p{
+                background-color: #fef37e;
+                padding: 5px;                
+                text-indent: 10px;
+                border-radius: 3px;
+            }
+
+
+            ol {
+                background-color: #fef37e;
+                border-radius: 3px;
+                padding: 10px 30px; 
+            }            
+            ol > li {
+                font-weight: 600;
+            }
+            li > ul {
+                font-weight: normal;
+            }
+            .lista > h2 {                
+                margin-bottom: -10px;
+            }
+            #lista {
+                text-align: center;
+                background-color: #4ECDC4;
+                width: 50%;
+                margin-left: 25%;
+                border-radius: 3px;
+                box-shadow: 3px 3px 0px 0px #0000007f;
+            }
+            .lista {               
+                width: 50%;
+                margin-top: -50px;
+                float: right;
+                margin-right: 3%;
+                margin-left: 2%;                
+            }
+            .tabela {
+                float: left;
+                width: 45%;
+                margin-left: 3%;
+            }
+            .dcolunas {
+                display: flex;
+            }
+
+            table {
+                background-color: #fef37e;
+            }
+            #linha, tr:nth-child(n+0):nth-child(even) {
+                background-color: #ed673b;
+            }
+
+            .tcolunas {
+                display: flex;
+                margin: 10px;
+            }
+            .h2 {
+                background-color: #4ECDC4;
+                margin: 0px;
+                box-shadow: 3px 3px 0px 0px #0000007f
+            }
+            .html > h2 {
+                background-color: #fef37e;
+            }
+
+            .css, .html, .js, h2{
+                text-align: center;
+            }
+            .css {
+                width: 33.3%;
+                float: left;
+                background-color: #fef37e;                  
+                            
+            }
+            .css > p, .html > p, .js > p {              
+                
+                text-align: justify;
+                padding: 8px;
+                text-indent: 10px;  
+            }
+            .html {
+                width: 33.3%;
+                margin: 0 5px;
+                background-color: #4ECDC4;
+            }
+            
+            .js {
+                width: 33.3%;
+                background-color: #fef37e;              
+                
+            }
+            
+            
+            .html, .js, .css {
+                border-radius: 3px;
+            }
+           
+            foot > p {
+                text-align: center;
+                color: white;
+                background-color: black;
+            }            
+            .formulario {
+                width: 50%;
+                margin-left: 25%;
+            }
+            .formulario textarea, input, select, button {
+                width: 100%;
+            }
+            #priv  {
+                width: 98%;
+                margin-left: 90px;
+                                
+            }
+            #checkbox {
+                width: 3%;
+                margin-left: 70px;
+            }
+            
+            .delsend {
+                display: flex;
+            }
+            #envia, #butdel {
+                width: 50%;
+            }
+
+
+            .qtcolun {
+                display: flex;
+            }
+            .quatro {
+                margin-top: 2%;
+                width: 25%;
+                margin-left: 2%;
+                margin-right: 2%;                
+            }
+            .quatro > li > a:hover{
+                color: blueviolet;
+            }
+            #sobre, #tutoriais{
+                background-color: #fef37e;
+                padding: 5px;
+                border-radius: 3px;
+            }
+            #referencias, #outros {
+                background-color: #4ECDC4;
+                padding: 5px;
+                border-radius: 3px;
+            }
+            #sobre > h3, #tutoriais >h3, #outros > h3, #referencias > h3{
+                margin-left: 3px;
+                text-decoration: underline solid black;
+                margin-top: 3px;
+            }
+
+        
+    </style>
+</head>
+<body>
+    <div>
+        <div class="inicio">
+            <header id="topo">
+                <h1>HTML <sup>Linguagem de Marcação de Hipertexto</sup></h1>
+            </header>
+            <nav class="menu">
+                <a href="#tabela">Tabela</a>
+                <a href="#lista">Lista</a>
+                <a href="#form">Formulário</a>
+            </nav>
+        </div>        
+        <section class="imgintro">
+            <picture class="imagem"><img height="100px" width="150px" src="https://media.istockphoto.com/id/1383447162/pt/vetorial/90s-retro-vaporwave-aesthetics-digital-screen-user-interface-cute-old-computer-ui-elements.jpg?s=612x612&w=0&k=20&c=W2QvFKVK08nXG1Hqi6CFv7UXVrLWxUNRQ7WM1lYO1HY=" alt="imagem web"></picture>
+            <section class="tutorial">
+                <h1>Tutoriais para iniciantes</h1>
+                <p><strong><u>HTML</u></strong> (<em>Linguagem de Marcação de Hipertexto</em>) é o bloco de construção mais básico da web. <mark>Define o significado e a estrutura do conteúdo da web</mark>. Outras tecnologias além do HTML geralmente são usadas para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento (<i>JavaScript</i>) de uma página da web.</p>
+            </section>
+        </section>
+        <section class="funcao">
+            <h2>Qual a função do HTML?</h2>
+            <p>Imagine que você precisa construir um site do zero com informações da sua empresa. Nesse caso, você precisará conhecer a estrutura do HTML, criando um documento no bloco de notas e acrescentando códigos - tags -, que indicarão parágrafos, quebra de texto, espaçamento, imagens, entre outros. Em geral, em um único site, existem diversos documentos HTML, criando páginas como homepage, página de produto e informações sobre a empresa. Em cada aba, existem um código diferente.</p>
+        </section>
+        <section class="dcolunas">
+            <section class="tabela">
+                <table border="2" id="tabela">
+                    <thead>
+                        <caption>
+                            <tr>
+                                <th colspan="2">TABELA DE TAGS HTML</th>
+                                <th></th>
+                            </tr>
+                        </caption>
+                        <tr>
+                            <th>TAG</th>
+                            <th>Função</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <div id="linha">
+                            <tr>
+                                <td>html</td>
+                                <td>Define o escopo de um documento</td>
+                            </tr>
+                            <tr>
+                                <td>p</td>
+                                <td>Define um parágrafo em um documento</td>
+                            </tr>
+                            <tr>
+                                <td>border</td>
+                                <td>Define uma moldura ao redor da imagem</td>
+                            </tr>
+                            <tr>
+                                <td>title</td>
+                                <td>Define o título da imagem</td>
+                            </tr>
+                            <tr>
+                                <td>align</td>
+                                <td>Define o alinhamento em relaçao ao espaço em que uma imagem possa estar</td>
+                            </tr>
+                            <tr>
+                                <td>width</td>
+                                <td>Define a largura da imagem</td>
+                            </tr>
+                            <tr>
+                                <td>height</td>
+                                <td>Defina a altura da imagem</td>
+                            </tr>
+                        </div>
+                    </tbody>
+                </table>
+            </section>
+            <section class="lista">
+                <h2 id="lista">Lista de Protocolos Web</h2>
+                <ol>
+                    <li>FTP
+                        <ul>Protocolo de transferência de arquivos</ul>
+                    </li>
+                    <li>POP3
+                        <ul>Protocolo de recebimento de mensagem</ul>
+                    </li>
+                    <li>SMTP
+                        <ul>Protocolo de envio de mensagens</ul>
+                    </li>
+                    <li>IMAP
+                        <ul>Protocolo de recebimento de mensagens</ul>
+                    </li>
+                    <li>HTTP
+                        <ul>Protocolo de Transferência de Hipertexto</ul>
+                    </li>
+                </ol>
+            </section>
+        </section>
+        <section class="tcolunas">
+            <section class="css">
+                <h2 class="h2">CSS</h2>
+                <p>CSS (Cascading Style Sheets) é uma linguagem de folha de estilo utilizada para definir a apresentação e o layout de documentos HTML (Hypertext Markup Language). Com o CSS, os desenvolvedores podem controlar diversos aspectos visuais de um site ou aplicativo web, como cor, fonte, espaçamento, tamanho e posição dos elementos. Ele permite separar o conteúdo estrutural do documento HTML da sua apresentação visual, facilitando a manutenção e o design responsivo de páginas da web.</p>
+            </section>
+            <section class="html">
+                <h2 class="h2">HTML</h2>
+                <p>HTML (Hypertext Markup Language) é a linguagem padrão para a criação e estruturação de documentos na web. Usando tags e elementos específicos, os desenvolvedores podem definir a estrutura e o conteúdo de uma página da web, incluindo texto, imagens, links e outros elementos multimídia. O HTML fornece a base para a construção de páginas da web e é fundamental para a comunicação de informações na internet.</p>
+            </section>
+            <section class="js">
+                <h2 class="h2">JavaScript</h2>
+                <p>JavaScript é uma linguagem de programação de alto nível, interpretada e multi-paradigma, usada principalmente para criar interatividade em páginas da web. Ela permite aos desenvolvedores manipular elementos HTML, responder a eventos do usuário, criar animações, validar formulários e muito mais. JavaScript é executado no lado do cliente, ou seja, no navegador do usuário, tornando-se uma parte essencial do desenvolvimento web moderno. Além disso, também pode ser usado no lado do servidor (Node.js) e em diversos outros contextos de desenvolvimento de software.</p>
+            </section>
+        </section>
+        <section class="formulario">
+            <form action="pg2.html" method="get" class="form" id="form">
+                <label class="out-text">Nome:</label>
+                <input type="text">
+                <label class="out-text">Idade:</label>
+                <input type="number">
+                <label class="out-text">Email:</label>
+                <input type="email">
+                <label class="out-text">Assunto:</label>
+                <select name="assunto">
+                    <option value="Sugestão">Sugestão</option>
+                    <option value="Elogio" selected="Elogio">Elogio</option>
+                    <option value="Reclamação">Reclamação</option>
+                </select>
+                <textarea name="Mensagem"></textarea>
+                <label id="priv">Concordo com os termos de privacidade.</label>
+                <input id="checkbox" type="checkbox" name="termo" value="aceito" required>
+                <div class="delsend">
+                    <input id="envia" type="submit" action target="_blank" value="Enviar">
+                    <button id="butdel" type="reset">Apagar</button>
+                </div>
+            </form>
+        </section>
+        <section class="qtcolun">
+            <section class="quatro" id="sobre">
+                <h3>Sobre</h3>
+                <li><a href="#topo">Topo</a></li>
+                <li><a href="">Política de Privacidade</a></li>
+                <li><a href="#">Fale Conosco</a></li>
+            </section>
+
+            <section class="quatro" id="referencias">
+                <h3>Referências</h3>
+                <li><img width="15px" height="15px" src="imagens/657734.png" alt="Logo da W3Schools"><a target="_blank" href="https://www.w3schools.com"> /W3Schools</a></li>
+                <li><img width="15px" height="15px" src="imagens/alura.png" alt="Logo da Alura"><a target="_blank" href="https://www.alura.com.br"> /alura</a></li>
+                <li><img width="15px" height="15px" src="imagens/youtubelogo.png" alt="Logo do Youtube"><a target="_blank" href="https://www.youtube.com/@CursoemVideo"> /cursoemvideo</a></li>
+            </section>
+
+            <section class="quatro" id="tutoriais">
+                <h3>Tutoriais</h3>
+                <li><a target="_blank" href="https://www.youtube.com/watch?v=8mei6uVttho&list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV">Lógica de Programação</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6">Programação Python</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n">Curso de HTML</a></li>
+            </section>
+
+            <section class="quatro" id="outros">
+                <h3>Outros Links</h3>
+                <li><img width="30px" height="15px" src="imagens/unipe-m.png" ><a target="_blank" href="https://www.unipe.edu.br">/unipê</a></li>
+                <li><img width="15px" height="15px" src="imagens/github-logo.png" alt=""><a target="_blank" href="https://github.com"> /github</a></li>
+                <li><img width="15px" height="15px" src="imagens/logo-ebac.png" alt=""><a target="_blank" href="https://ebaconline.com.br">/ebac</a></li>
+                
+            </section>
+        </section>
+
+        <footer>
+            <foot>
+                <p>Powered by Diego Braga Fong</p>
+            </foot>
+        </footer>
+    </div>
+    
+</body>
+</html>
